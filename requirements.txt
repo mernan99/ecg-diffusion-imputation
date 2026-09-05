@@ -1,0 +1,14 @@
+# Core numerical computing
+numpy>=2.1
+
+# Data handling
+pandas>=2.2
+
+# Interpolation, statistics, Latin-hypercube sampling and Wilcoxon tests
+scipy>=1.14
+
+# Plotting and result visualisation
+matplotlib>=3.9
+
+# Neural networks, U-Net and diffusion models
+torch>=2.6

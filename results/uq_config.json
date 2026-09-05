@@ -1,0 +1,36 @@
+{
+  "factor_names": [
+    "gap_seconds",
+    "gap_position",
+    "noise_std_mv",
+    "baseline_wander_mv"
+  ],
+  "factor_distributions": "independent_uniform",
+  "gap_seconds": [
+    0.25,
+    2.0
+  ],
+  "gap_position": [
+    0.0,
+    1.0
+  ],
+  "noise_std_mv": [
+    0.0,
+    0.05
+  ],
+  "baseline_wander_mv": [
+    0.0,
+    0.1
+  ],
+  "baseline_frequency_hz": 0.33,
+  "design_points": 256,
+  "records": 8,
+  "diffusion_samples": 10,
+  "design_seed": 314159,
+  "record_seed": 271828,
+  "measurement_noise_seed": 161803,
+  "diffusion_seed": 20260902,
+  "ptbxl_fold": 10,
+  "lead": "II",
+  "diffusion_steps": 100
+}

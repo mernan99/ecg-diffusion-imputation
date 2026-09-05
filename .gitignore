@@ -1,0 +1,57 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# Dataset
+# ============================================================
+
+data/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/
+
+
+# ============================================================
+# Model checkpoints
+# ============================================================
+
+results/*.pt
+results/*.pth
+results/*.ckpt
+
+
+# ============================================================
+# Large raw experiment outputs
+# ============================================================
+
+results/interpolation_results.csv
+results/autoencoder_test_results.csv
+results/diffusion_test_results.csv
+results/diffusion_test_results_quick.csv
+results/fixed_test_results.csv
+results/paired_unet_diffusion_results.csv
+results/uncertainty_results.csv
+results/uq_design_results.csv
+
+
+# ============================================================
+# Temporary / quick experiment outputs
+# ============================================================
+
+results/*_quick.csv

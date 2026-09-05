@@ -1,0 +1,34 @@
+HOW TO RUN THE FULL-DATASET INTERPOLATION EXPERIMENT
+
+1. Put/extract PTB-XL inside:
+
+   data/
+   └── ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/
+       └── records100/
+           ├── 00000/
+           ├── 01000/
+           ├── 02000/
+           └── ...
+
+2. Open PowerShell in the project root.
+
+3. Install dependencies:
+
+   python -m pip install -r requirements.txt
+
+4. Run the experiment:
+
+   python experiments/interpolation_baseline.py
+
+5. Output files will be written to:
+
+   results/interpolation_results.csv
+   results/interpolation_summary.csv
+
+The script uses:
+- Lead II
+- 0.25 s, 0.5 s, 1.0 s and 2.0 s missing blocks
+- 5 random missing locations per ECG
+- 1 second of observed context on either side of each gap
+- linear interpolation
+- cubic spline interpolation
